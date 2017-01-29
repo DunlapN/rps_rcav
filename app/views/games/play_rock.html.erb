@@ -1,0 +1,37 @@
+<head>
+  <link rel="stylesheet" href="/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="container-fluid padding-inside-top-md padding-inside-bottom-md container-fluid text-center">
+
+
+  <h1>You played rock!</h1>
+
+
+
+  <h1>
+    The computer played
+
+    <%= computer_move = ["rock", "paper", "scissors"].sample %>
+  </h1>
+
+  <h1>
+    <% if computer_move == "rock" %>
+      You tied!
+    <% elsif computer_move == "paper" %>
+      You lose!
+    <% else %>
+      You win!
+    <%end %>
+  </h1>
+
+  <a href="/paper"
+    <i class="fa fa-hand-paper-o fa-3x" aria-hidden="true"></i>
+
+  </a>
+
+  <a href="/scissors">
+    <i class="fa fa-hand-scissors-o fa-3x" aria-hidden="true"></i>
+  </a>
+</body>
