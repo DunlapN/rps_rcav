@@ -10,10 +10,16 @@ class GamestwoController <ApplicationController
 
        if @computer_move == "paper"
         @outcome ="You tied!"
+        # @hand = "fa fa-hand-rock-o fa-3x"
+
       elsif @computer_move == "scissors"
         @outcome = "You lose!"
+        # @hand = "fa fa-hand-scissors-o fa-3x"
+
        else
         @outcome = "You win!"
+        # @hand = "fa fa-hand-rock-o fa-3x"
+
       end
     render("games/play_paper.html.erb")
   end

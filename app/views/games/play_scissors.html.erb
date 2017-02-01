@@ -5,12 +5,20 @@
 <body class="container-fluid padding-inside-top-md padding-inside-bottom-md container-fluid text-center">
 
 
-  <h1>You played scissors</h1>
+  <h1>You played  <i class="fa fa-hand-scissors-o fa-3x" aria-hidden="true"></i>
+</h1>
 
-  <h1>
+  <!-- <h1>
     The computer played
 
     <%= computer_move = ["rock", "paper", "scissors"].sample %>
+  </h1> -->
+
+  <h1>
+    Computer played
+
+    <i class="fa fa-hand-<%= computer_move %>-o fa-3x" aria-hidden="true"></i>
+
   </h1>
 
   <h1>
@@ -23,12 +31,17 @@
     <%end %>
   </h1>
 
-  <a href="/rock"
-    <i class="fa fa-hand-rock-o fa-3x" aria-hidden="true"></i>
 
+
+  <a href="/rock">
+    Play Rock
+  </a>
+
+  <a href="/scissors">
+    Play Scissors
   </a>
 
   <a href="/paper">
-    <i class="fa fa-hand-paper-o fa-3x" aria-hidden="true"></i>
+    Play Paper
   </a>
 </body>

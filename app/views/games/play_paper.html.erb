@@ -4,26 +4,35 @@
 </head>
 <body class="container-fluid padding-inside-top-md padding-inside-bottom-md container-fluid text-center">
 
-
-  <h1>You played paper</h1>
+div
+  <h1>You played     <i class="fa fa-hand-paper-o fa-3x" aria-hidden="true"></i>
+</h1>
 
   <h1>
     Computer played
 
-    <%= @computer_move %>
+
+    <i class="fa fa-hand-<%=@computer_move %>-o fa-3x" aria-hidden="true"></i>
+
   </h1>
 
   <h1>
     <%= @outcome %>
   </h1>
 
-  <a href="/rock"
-    <i class="fa fa-hand-rock-o fa-3x" aria-hidden="true"></i>
+  <a href="/rock">
+    Play Rock
+    <!-- <i class="fa fa-hand-rock-o fa-3x" aria-hidden="true"></i> -->
 
   </a>
 
   <a href="/scissors">
-    <i class="fa fa-hand-scissors-o fa-3x" aria-hidden="true"></i>
+    Play Scissors
+    <!-- <i class="fa fa-hand-scissors-o fa-3x" aria-hidden="true"></i> -->
+  </a>
+
+  <a href="/paper">
+    Play Paper
   </a>
 
 </body>
