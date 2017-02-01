@@ -4,17 +4,15 @@
 </head>
 <body class="container-fluid padding-inside-top-md padding-inside-bottom-md container-fluid text-center">
 
-div
-  <h1>You played     <i class="fa fa-hand-paper-o fa-3x" aria-hidden="true"></i>
-</h1>
 
+
+  <h1>You played</h1>
+  <i class="fa fa-hand-paper-o fa-3x" aria-hidden="true"></i>
   <h1>
     Computer played
-
-
-    <i class="fa fa-hand-<%=@computer_move %>-o fa-3x" aria-hidden="true"></i>
-
   </h1>
+  <i class="fa fa-hand-<%=@computer_move %>-o fa-3x" aria-hidden="true"></i>
+
 
   <h1>
     <%= @outcome %>
@@ -23,7 +21,7 @@ div
   <a href="/rock">
     Play Rock
     <!-- <i class="fa fa-hand-rock-o fa-3x" aria-hidden="true"></i> -->
-
+    
   </a>
 
   <a href="/scissors">

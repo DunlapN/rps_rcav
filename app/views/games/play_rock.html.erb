@@ -9,29 +9,24 @@
 
 
 
-  <h1>You played  <i class="fa fa-hand-rock-o fa-3x" aria-hidden="true"></i>
-</h1>
+  <h1>You played</h1>
 
-  <!-- <h1>
-    The computer played
+  <i class="fa fa-hand-rock-o fa-3x" aria-hidden="true"></i>
 
-    <%= computer_move = ["rock", "paper", "scissors"].sample %>
-  </h1> -->
+  <% computer_move = ["rock", "paper", "scissors"].sample %>
 
   <h1>
     Computer played
-
-    <i class="fa fa-hand-<%= computer_move %>-o fa-3x" aria-hidden="true"></i>
-
   </h1>
 
+  <i class="fa fa-hand-<%= computer_move %>-o fa-3x" aria-hidden="true"></i>
   <h1>
     <% if computer_move == "rock" %>
-      You tied!
+    You tied!
     <% elsif computer_move == "paper" %>
-      You lose!
+    You lose!
     <% else %>
-      You win!
+    You win!
     <%end %>
   </h1>
 
